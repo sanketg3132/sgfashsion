@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+<!------ Include the above in your HEAD tag ---------->
+	
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+ 
+    <title>Student record</title>
+  </head>
+  <style>
+  .row {
+   display: flex;
+}
+.row > div[class*='col-'] {
+  display: flex;
+ 
+}
+
+footer.nb-footer {
+background: #222;
+border-top: 4px solid #b78c33; }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 13px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 16px;
+color: #b78c33;
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: #b78c33;
+color: #fff;
+border-color: #b78c33; }
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 16px;
+border-left: 4px solid #b78c33;
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: #b78c33; }
+footer.nb-footer .footer-info-single p {
+font-size: 13px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+
+.column {
+  float: left;
+  width:25%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 -10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+#s2
+{
+	width:200px;
+	height:50px;
+	text-align:center;
+}
+#s1{
+    margin-left:4px;
+	background-color:blue;
+	  color: #fff;
+	 #s3{
+    margin-left:4px;
+	background-color:blue;
+	 color: #fff;
+
+}
+#s23
+{
+	 color: #fff;
+	 background-color:blue;
+}
+.modal-body th td
+{
+	color:blue;
+}
+  </style>
+  <body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">SG shoppings</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="pagenew,html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            cloth info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item">mens wear</a>
+		  <a class="dropdown-item">womens wear</a>
+		  <a class="dropdown-item">kids wear</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+	   <li class="nav-item">
+	   <a href="#" data-toggle="popover"  data-content="you have sum notifications"><button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="s3">notification</button>
+		</button></a>
+		</li>
+		<li class="nav-item">
+			
+		</li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mydata" id="s1">
+    Login
+  </button>
+  <div class="modal fade" id="mydata">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login here!!!!</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <p>username</p>
+		 <input type="text">
+		 <p>password</p>
+		 <input type="password">
+		 <br><br>
+		 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mydata" id="s1">
+    Login
+  </button>
+  <hr> 
+  <p>or you can login from this also</p>
+		  <ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-google"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-yahoo"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+	  </form>
+</nav>
+
+<div class="jumbotron">
+  <h1 class="display-4">SG Fashions</h1>
+  <p class="lead">Here is the suggestion List for the Fashion brand.!!!!</p>
+  <hr class="my-4">
+  <p>Singin here and make part our family.</p>
+  <div class="container mt-3">
+	  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Singin
+  </button>
+	<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Singin here!!!!</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		<table width="500">
+          <th>frist name</th><th>lastname</th>
+		  <tr><td><input type="text" placeholder="frsitname"></td><td><input type="text" placeholder="lastname"></td></tr>
+		   <th>mobileno</th><th>Gender</th>
+		   <tr><td><input type="text" placeholder="mobileno"></td><td><input type="text" placeholder="Gender"></td></tr>
+		   <th>brithdate</th><th>username</th>
+		   <tr><td><input type="text" placeholder="brithdate"></td><td><input type="text" placeholder="username"></td></tr>
+		   <th>create your password</th><th>verify your password</th>
+		   <tr><td><input type="text" placeholder="create your password"></td><td><input type="text" placeholder="verify your password"></td></tr>
+		    </table>
+		  <br>
+		  <hr> 
+		  <ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-google"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-yahoo"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+			<button type="button" class="close" data-dismiss="modal">Singin</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+	</div>
+ </div>
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.shootproof.com/blog/wp-content/uploads/2019/02/ross-kyker-2.jpg" class="d-block w-100" alt="..." height="500">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Always be good look</h5>
+          <p>Fashion has always been a thriving industry throughout the ages. Which is why it is no surprise that Fashion is also one of the most popular content types on Instagram and other social media platforms.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://image.freepik.com/free-photo/bearded-man-drinking-bar_1303-9376.jpg" class="d-block w-100" alt="..."height="500">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fashion has always been a thriving industry throughout the ages</h5>
+          <p>Passion for fashion.Paula Lishman. Timeless, elegant, sustainable.Pay less, stay in fashion!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.freepik.com/free-photo/portrait-happy-bearded-young-man-glasses-standing-outdoors_171337-14763.jpg?size=626&ext=jpg" class="d-block w-100" alt="..."height="500">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Everyday living. Be unique, be brave, be divine. ...</h5>
+          <p>The best look anytime, anywhere.The crown jewelers for 150 years.The expression of pearls..</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br>
+<div class="container">
+<div class="row">
+  <div class="column">
+    <div class="card">
+	<img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11110712/2020/2/20/26b3eabe-ce7a-4874-a1d8-59e603e43b7f1582189033813-Harvard-Men-Shirts-9451582189030761-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+       <center><h3>Harvard</h3></center>
+       <center><p>Men Blue Regular Fit Solid Cotton Linen Casual Shirt</p></center>
+            <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2283230/2018/2/2/11517573007171-Roadster-Men-Green-Regular-Fit-Printed-Casual-Shirt-6301517573007001-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+       <center><h3>Roadster</h3></center>
+       <center><p>Men Green Regular Fit Cotton Printed Casual Shirt</p></center>
+      <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1362028/2016/8/31/11472638719005-Roadster-Men-Brown-Regular-Fit-Checked-Casual-Shirt-3421472638718814-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+       <center><h3>Roadster</h3></center>
+       <center><p>Men Brown Regular Fit Checked Casual Shirt</p></center>
+            <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10862144/2020/4/6/90525d69-9bb5-4cdc-8fdf-2315c5a19e951586154050745-Nautica-Men-Shirts-5381586154049353-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+      <center><h3>Nautica</h3></center>
+       <center><p>Men White & Blue Slim Fit Printed Casual Shirt</p></center>
+  <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+     <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1027241/2020/5/22/4cb06bc3-4d6e-408b-9c3f-156daba1ad9d1590137516581-ether-Men-Black-Regular-Fit-Antimicrobial-Corduroy-Shirt-756-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+       <center><h3>ether</h3></center>
+       <center><p>Men Black Regular Fit Antimicrobial Corduroy Shirt</p></center>
+         <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+     <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/3/17/7f27937e-77bf-4d18-a7ef-e257cf1fde8c1584394901591-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+       <center><h3>C by Lifestyle</h3> </center>
+       <center><p>Men Cream-Coloured Regular Fit Solid Casual Shirt</p></center>
+        <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+     <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11361216/2020/3/12/59e6de81-852b-403e-89c4-b6cdc2d512471583998248059-WROGN-Men-Shirts-4981583998246188-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+       <center><h3>WROGN</h3></center>
+      <center><p>Men Green & Brown Slim Fit Camouflage Printed Casual Shirt</p></center>
+       <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+     <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10887562/2020/3/20/d42ee920-5508-4fd3-968b-57612e83daa71584683579037-INVICTUS-Men-Blue--Green-Slim-Fit-Printed-Casual-Shirt-87315-1.jpg" class="d-block w-100" alt="..."height="300" width="100">
+       <center><h3>INVICTUS</h3></center>
+      <p>Men Blue & Green Slim Fit Printed Formal Shirt</p>
+       <center><button type="submit" class="btn btn-primary mb-2" id="s2">Order now</button></center>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<div class="container-box rotated" id="contact">
+<center><button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#mycontact">Contact Us</button></center>
+</div>
+
+<!-- Modal -->
+<div id="mycontact" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Contact Us</h4>
+<button type="button" class="close" data-dismiss="modal">×</button>
+</div>
+<div class="modal-body">
+
+        <form role="form" method="post" id="reused_form" >
+        <p>
+            Send your message in the form below and we will get back to you as early as possible.
+        </p>
+
+        <div class="form-group">
+            <label for="name">
+                Name:</label>
+            <input type="text" class="form-control"
+            id="name" name="name"   required maxlength="50">
+
+        </div>
+        <div class="form-group">
+            <label for="email">
+                Email:</label>
+            <input type="email" class="form-control"
+            id="email" name="email" required maxlength="50">
+        </div>
+        <div class="form-group">
+            <label for="name">
+                Message:</label>
+            <textarea class="form-control" type="textarea" name="message"
+            id="message" placeholder="Your Message Here"
+            maxlength="6000" rows="7"></textarea>
+        </div>
+
+
+
+
+
+        <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! →</button>
+
+    </form>
+    <div id="success_message" style="width:100%; height:100%; display:none; ">
+        <h3>Sent your message successfully!</h3>
+    </div>
+    <div id="error_message"
+    style="width:100%; height:100%; display:none; ">
+        <h3>Error</h3>
+        Sorry there was an error sending your form.
+
+    </div>
+</div>
+
+</div>
+
+ </div>
+</div>
+</div>
+<br>
+<br>
+<footer class="nb-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="about">
+	<img src="images/logo.png" class="img-responsive center-block" alt="">
+	<p>You can contact with us throught this scocial meadia also we are always there for you help!!!!</p>
+
+<ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Help Center</h2>
+	<ul class="list-unstyled">
+		<li><a href="how to pay page.html" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Customer information</h2>
+	<ul class="list-unstyled">
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+		<li><a href="#contact" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Security & privacy</h2>
+	<ul class="list-unstyled">
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Payment</h2>
+	<p>every type of payment we are accetpting.cradit/debit/cash on delivery/online payment also</p>
+	
+</div>
+</div>
+</div>
+</div>
+
+<section class="copyright">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<p>Copyright © 2017. sgfashtion3132@gmail.in</p>
+</div>
+<div class="col-sm-6"></div>
+</div>
+</div>
+</section>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	// Prevent dropdown menu from closing when click inside the form
+	$(document).on("click", ".navbar-right .dropdown-menu", function(e){
+		e.stopPropagation();
+	});
+</script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+ 
+  </body>
+  </html>

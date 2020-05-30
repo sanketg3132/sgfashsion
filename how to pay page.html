@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+<!------ Include the above in your HEAD tag ---------->
+	
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+ 
+    <title>Student record</title>
+  </head>
+  <style>
+  .row {
+   display: flex;
+}
+.row > div[class*='col-'] {
+  display: flex;
+ 
+}
+
+footer.nb-footer {
+background: #222;
+border-top: 4px solid #b78c33; }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 13px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 16px;
+color: #b78c33;
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: #b78c33;
+color: #fff;
+border-color: #b78c33; }
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 16px;
+border-left: 4px solid #b78c33;
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: #b78c33; }
+footer.nb-footer .footer-info-single p {
+font-size: 13px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+#s1{
+    margin-left:4px;
+	background-color:blue;
+	  color: #fff;
+	 #s3{
+    margin-left:4px;
+	background-color:blue;
+	 color: #fff;
+
+}
+
+  </style>
+  <body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">SG shoppings</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            cloth info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item">mens wear</a>
+		  <a class="dropdown-item">womens wear</a>
+		  <a class="dropdown-item">kids wear</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+	   <li class="nav-item">
+	   <a href="#" data-toggle="popover"  data-content="you have sum notifications"><button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="s3">notification</button>
+		</button></a>
+		</li>
+		<li class="nav-item">
+			
+		</li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+	  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mydata" id="s1">
+    Login
+  </button>
+  <div class="modal fade" id="mydata">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login here!!!!</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <p>username</p>
+		 <input type="text">
+		 <p>password</p>
+		 <input type="password">
+		 <br><br>
+		 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mydata" id="s1">
+    Login
+  </button>
+  <hr> 
+  <p>or you can login from this also</p>
+		  <ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-google"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-yahoo"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+	  </form>
+</nav>
+<br>
+<div name="container">
+<center><form class="form-inline my-2 my-lg-0">
+<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"><br>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	  </form></center>
+	  <br>
+<h1>About Pay on Delivery</h1>
+<br><br>
+<p>Pay on Delivery' (POD) includes Cash on Delivery (COD) as well as additional digital payment facilities at your doorstep. You can pay for 'Pay on Delivery' orders by cash at all locations and by Debit card / Credit card in select locations.</p>
+<hr>
+<p>Pay on Delivery is available as a payment method for all items that are Fulfilled by Amazon, Prime Eligible and some seller fulfilled items.
+
+Pay on Delivery orders can be paid using Cash or Credit card/Debit card. Please check with the delivery associate if you can pay by using Sgfashions Pay link and <span style="color:blue">card swipe machine/mPOS</span> (subject to availability of payment instrument at your location). We accept Visa, MasterCard, Maestro and Rupay debit and credit cards from all banks.</p>
+
+<table>
+<th>How to pay using <span style="color:blue">card swipe machine/mPOS -</span></th>
+<tr><td>1.Ask your delivery agent for a card swipe machine/mPOS</td></tr>
+<tr><td>2.Swipe/insert your card</td></tr>
+<tr><td>3.Enter your card ATM PIN number to complete the payment</td></tr>
+<tr><td>4.Post successful payment, you will get a confirmation message.</td></tr>
+</table>
+<br><br>
+<table>
+<th>How to pay using <span style="color:blue">SGfashsion Pay link –</span></th>
+<tr><td>1.Ask your delivery agent for Pay link SMS on your smartphone which has internet connectivity</td></tr>
+<tr><td>2.Click on the link in SMS and initiate payment</td></tr>
+<tr><td>3.Select your payment method and complete payment using your credentials</td></tr>
+<tr><td>4.Post successful payment, you will get a confirmation message.</td></tr>
+</table>
+<br><br>
+<p>Pay on Delivery cannot be used in conjunction with the Amazon Pay balance as a payment mode. If you deselect Amazon Pay balance as a payment mode on the Amazon.in payment page, Pay on Delivery may become available as a payment mode, provided the item and delivery pin code are eligible.
+
+We only collect the amount printed on the invoice.</p>
+</div>
+
+<div name="container">
+ <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonPay/Electronification/Mpos/New/Steps._CB492037314_.jpg" class="d-block w-100" alt="..."height="500">
+</div>
+<footer class="nb-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="about">
+	<img src="images/logo.png" class="img-responsive center-block" alt="">
+	<p>You can contact with us throught this scocial meadia also we are always there for you help!!!!</p>
+
+<ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Help Center</h2>
+	<ul class="list-unstyled">
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Customer information</h2>
+	<ul class="list-unstyled">
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Security & privacy</h2>
+	<ul class="list-unstyled">
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
+		<li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-info-single">
+	<h2 class="title">Payment</h2>
+	<p>every type of payment we are accetpting.cradit/debit/cash on delivery/online payment also</p>
+	
+</div>
+</div>
+</div>
+</div>
+
+<section class="copyright">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<p>Copyright © 2017. sgfashtion3132@gmail.in</p>
+</div>
+<div class="col-sm-6"></div>
+</div>
+</div>
+</section>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+<script type="text/javascript">
+	// Prevent dropdown menu from closing when click inside the form
+	$(document).on("click", ".navbar-right .dropdown-menu", function(e){
+		e.stopPropagation();
+	});
+</script>
+</body>
+</html>
